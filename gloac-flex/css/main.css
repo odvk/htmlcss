@@ -9,6 +9,10 @@ body {
     font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
 }
 
+html {
+    font-size: 10px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -26,7 +30,7 @@ body {
 }
 
 .main-overlay {
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     position: absolute;
     left: 0;
     top: 0;
@@ -41,19 +45,24 @@ body {
 }
 
 .header {
-    border: 2px solid red;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
     height: 10vh;
     width: 90%;
     position: relative;
     z-index: 2;
 
+    /*border: 2px solid red;*/
+
 }
 
 .menu {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
     width: 70%;
 
 }
@@ -61,23 +70,29 @@ body {
 .menu ul {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     list-style: none;
+    /*font-size: 1.4rem;*/
+}
 
+.menu ul {
+    /*padding-top: 2rem;*/
 }
 
 .menu-link {
     text-decoration: none;
     color: #fff;
+    padding: 2rem 25px 20px;
 
 }
 
 .get-started-btn {
     margin-left: 60px;
-    border: 1px solid #fff;
     border-radius: 100px;
     padding: 10px 20px;
 
     text-transform: uppercase;
+    border: 1px solid #fff;
 
 }
 
@@ -92,13 +107,13 @@ body {
     text-align: center;
 }
 
-.main-text {
-    border: 2px solid blue;
-}
+/*.main-text {*/
+/*    border: 2px solid blue;*/
+/*}*/
 
-.main-text * {
-    border: 1px solid red;
-}
+/*.main-text * {*/
+/*    border: 1px solid red;*/
+/*}*/
 
 .main-text span {
     display: inline-block;
@@ -138,17 +153,162 @@ body {
     align-items: center;
 
     z-index: 2;
-    border: 1px solid red;
+
+    /*border: 1px solid red;*/
 
 }
 
 .arrow-down {
     text-align: center;
-    line-height: 55px;
+    line-height: 60px;
     width: 50px;
     height: 50px;
     background-color: #fff;
     box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
     border-radius: 50%;
 
+}
+
+.table {
+    background-color: #f9fafc;
+    /*height: 100vh;*/
+    /*min-height: 600px;*/
+    padding: 10rem;
+}
+
+.table-header {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    /*border: 1px solid green;*/
+
+}
+
+.table-header * {
+    /*border: 1px solid red;*/
+}
+
+.table-header span {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: 9 fa4af;
+}
+
+.table-header h2 {
+    color: 4 f4f6f;
+    font-size: 6rem;
+    margin: 0;
+}
+
+.table-header p {
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 40rem;
+    line-height: 1.4;
+    color: #9fa4af;
+
+}
+
+.table-header span::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #6e45e2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+
+}
+
+.table-header span::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #6e45e2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+
+.price-tags {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+}
+
+.price-tags img {
+    width: 11rem;
+}
+
+.price-tag {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    width: 35rem;
+    /*height: 400px;*/
+    transition: 0.5s;
+
+    /*border: 1px solid blue;*/
+
+}
+
+.price-tag:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 60px 10px rgba(204, 204, 223, 0.71);
+
+}
+
+.price-tag span{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin: 3rem auto 1rem;
+}
+.price-tag h4 {
+    margin: 1rem;
+    font-weight: 500;
+    font-size: 4rem;
+    color: #4f4f6f;
+
+}
+.price-tag h4 sub {
+    font-size: 1.4rem;
+}
+
+.price-tag h4 sup {
+    vertical-align: super;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+.price-tag p{
+    margin-bottom: 2rem;
+    color: #9fa4af;
+    width: 80%;
+}
+
+.price-btn {
+    background-color: #fff;
+    border: #9fa4af 1px solid;
+    color: #9fa4af;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 4rem;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+
+.price-btn:hover {
+    background-color: #6e45e2;
 }
