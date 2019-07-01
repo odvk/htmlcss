@@ -73,16 +73,15 @@ html {
     flex-wrap: wrap;
     list-style: none;
     /*font-size: 1.4rem;*/
-}
 
-.menu ul {
-    /*padding-top: 2rem;*/
 }
 
 .menu-link {
     text-decoration: none;
     color: #fff;
     padding: 2rem 25px 20px;
+    font-size: 1.4rem;
+    /*border: 1px solid red;*/
 
 }
 
@@ -117,11 +116,18 @@ html {
 
 .main-text span {
     display: inline-block;
+    font-size: 1.5rem;
+
 }
 
 .main-text h1 {
     margin: 0.5rem;
     font-size: 80px;
+}
+.main-text p{
+        font-size: 1.5rem;
+
+
 }
 
 .main-text span::after {
@@ -269,11 +275,12 @@ html {
 
 }
 
-.price-tag span{
+.price-tag span {
     font-size: 1.4rem;
     text-transform: uppercase;
     margin: 3rem auto 1rem;
 }
+
 .price-tag h4 {
     margin: 1rem;
     font-weight: 500;
@@ -281,6 +288,7 @@ html {
     color: #4f4f6f;
 
 }
+
 .price-tag h4 sub {
     font-size: 1.4rem;
 }
@@ -291,7 +299,7 @@ html {
     margin-right: 0.5rem;
 }
 
-.price-tag p{
+.price-tag p {
     margin-bottom: 2rem;
     color: #9fa4af;
     width: 80%;
